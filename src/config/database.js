@@ -7,7 +7,7 @@ async function initializeDatabase() {
     // Create a connection pool without specifying the database
     const poolWithoutDb = mysql.createPool({
       host: 'localhost',
-      user: 'root',
+      user: 'review_books_app',
       password: '2022',
     }).promise();
 
@@ -18,7 +18,7 @@ async function initializeDatabase() {
     // Create a new pool with the specified database
     pool = mysql.createPool({
       host: 'localhost',
-      user: 'root',
+      user: 'review_books_app',
       password: '2022',
       database: 'book_review_db',
     }).promise();
